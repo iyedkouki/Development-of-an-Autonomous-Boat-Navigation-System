@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GRINErobot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0145487134045962 -0.0230214869188445 0.289356226139772"
+        rpy="0 0 0" />
+      <mass
+        value="0.448330208334565" />
+      <inertia
+        ixx="0.00119344494830626"
+        ixy="5.7799801765053E-09"
+        ixz="-1.73147858429719E-21"
+        iyy="0.00170454585623885"
+        iyz="-6.22021500000145E-07"
+        izz="0.00271586316461472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="roue RD Droit">
+    <inertial>
+      <origin
+        xyz="1.24586462947607E-06 0.0332607087151624 3.55692141151831E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.832123253787706" />
+      <inertia
+        ixx="0.00201213642608691"
+        ixy="1.69882929904823E-08"
+        ixz="-3.60650702842462E-08"
+        iyy="0.00343084261481868"
+        iyz="5.92280117814208E-08"
+        izz="0.00201205937499501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RD Droit.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RD Droit.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jointroue RD Droit"
+    type="continuous">
+    <origin
+      xyz="0.088662 -0.28936 0.17708"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="roue RD Droit" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="roue RA_droit">
+    <inertial>
+      <origin
+        xyz="-2.43456755533167E-07 0.0332607087151625 3.7609303916164E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.832123253787707" />
+      <inertia
+        ixx="0.00201215060499187"
+        ixy="-7.51224780417534E-09"
+        ixz="2.67354452712418E-09"
+        iyy="0.00343084261481869"
+        iyz="6.1156566374346E-08"
+        izz="0.00201204519609006" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RA_droit.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RA_droit.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint roue RA_droit"
+    type="continuous">
+    <origin
+      xyz="-0.081338 -0.28936 0.16888"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="roue RA_droit" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="roue RG">
+    <inertial>
+      <origin
+        xyz="-1.48009708614283E-07 -0.0332607109674042 -3.76597467516282E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.832123229243822" />
+      <inertia
+        ixx="0.00201215063690755"
+        ixy="5.93148275372737E-09"
+        ixz="6.73292538413164E-13"
+        iyy="0.00343084269302358"
+        iyz="6.13774784990445E-08"
+        izz="0.00201204509247169" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.109803921568627 0.109803921568627 0.109803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint roue RG"
+    type="continuous">
+    <origin
+      xyz="-0.081338 -0.28936 -0.21312"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="roue RG" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="roue RGD">
+    <inertial>
+      <origin
+        xyz="2.0617092415659E-06 -0.0332607109674041 -3.15496864128351E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.832123229243821" />
+      <inertia
+        ixx="0.00201211519386987"
+        ixy="-3.07334199838E-08"
+        ixz="4.98458272823439E-08"
+        iyy="0.00343084269302357"
+        iyz="5.34587153651947E-08"
+        izz="0.00201208053550937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RGD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.109803921568627 0.109803921568627 0.109803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRINErobot/meshes/roue RGD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint roue RGD"
+    type="continuous">
+    <origin
+      xyz="0.088662 -0.28936 -0.20492"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="roue RGD" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
