@@ -1,0 +1,55 @@
+mkdir -p ~/robot_dd/src
+cd ~/robot_dd
+	catkin_make
+	source ~/robot_dd/devel/setup.bash
+	echo $ROS_PACKAGE_PATH
+cd ~/robot_dd/src
+catkin_create_pkg robot_dd_model_pkg roscpp tf2 geometry_msgs urdf rviz joint_state_publisher_gui
+
+cd ~/robot_dd/src/robot_dd_model_pkg/
+mkdir urdf
+mkdir launch
+cd urdf
+gedit robot.urdf
+
+cd ~/robot_dd/src/robot_dd_model_pkg/launch
+gedit robot.launch
+
+
+
+
+
+
+
+
+
+cd ~/robot_dd
+rm -rf build devel
+source ~/robot_dd/devel/setup.bash
+catkin_make
+roslaunch robot_dd_model_pkg robot.launch
+
+
+cd ~/robot_dd
+rm -rf build devel
+catkin_make
+source devel/setup.bash
+source ~/robot_dd/devel/setup.bash
+roslaunch robot_dd_model_pkg robot.launch
+
+
+
+
+
+
+
+
+
+gazebo:::
+sudo apt-get install ros-noetic-gazebo-ros-pkgs
+sudo apt-get install ros-noetic-gazebo-msgs
+sudo apt-get install ros-noetic-gazebo-plugins
+sudo apt-get install ros-noetic-gazebo-ros-control
+sudo apt-get install ros-noetic-teleop-twist-keyboard
+
+

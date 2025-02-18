@@ -1,0 +1,10 @@
+cd ~/catkin_ws
+catkin_make
+source ~/catkin_ws/devel/setup.bash
+roslaunch grobot gazebo.launch
+
+
+cd ~/catkin_ws
+source ~/catkin_ws/devel/setup.bash
+roslaunch grobot teleop_keyboard.launch 
+

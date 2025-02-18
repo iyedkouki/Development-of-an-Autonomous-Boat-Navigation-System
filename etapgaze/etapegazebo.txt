@@ -1,0 +1,35 @@
+mkdir -p ~/robot_four/src
+cd ~/robot_four
+	catkin_make
+	source ~/robot_four/devel/setup.bash
+		echo $ROS_PACKAGE_PATH
+cd ~/robot_four/src
+catkin_create_pkg robot_model_pkg gazebo_msgs gazebo_plugins gazebo_ros gazebo_ros_control 
+cd ~/robot_four/src/robot_model_pkg
+mkdir urdf
+
+cd ~/robot_four/src/robot_model_pkg/urdf
+gedit robot.xarco
+
+cd ~/robot_four/src/robot_model_pkg
+mkdir launch
+cd ~/robot_four/src/robot_model_pkg/launch
+gedit robot_xarco.launch
+
+cd ~/robot_four
+	catkin_make
+	
+	
+	
+cd ~/robot_four
+rm -rf build devel
+source devel/setup.bash
+catkin_make
+roslaunch robot_model_pkg robot_xacro.launch
+
+
+
+error 
+cd ~/robot_four/src
+catkin_create_pkg xarco std_msgs rospy roscpp
+
