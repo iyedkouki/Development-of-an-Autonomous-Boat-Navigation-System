@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="boat version 5urdf">
+  <link
+    name="base_boat">
+    <inertial>
+      <origin
+        xyz="-0.0129680077843366 1.25727554650679E-06 -0.176841515724912"
+        rpy="0 0 0" />
+      <mass
+        value="13.5985858196954" />
+      <inertia
+        ixx="0.12499527878428"
+        ixy="8.16960124483469E-07"
+        ixz="-0.00148374605527536"
+        iyy="0.0961950105001574"
+        iyz="8.2799482679275E-06"
+        izz="0.136442575579436" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/base_boat.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/base_boat.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="axe_gauche">
+    <inertial>
+      <origin
+        xyz="1.2775E-06 -4.8777E-06 0.01649"
+        rpy="0 0 0" />
+      <mass
+        value="0.068101" />
+      <inertia
+        ixx="2.3224E-05"
+        ixy="-1.6786E-09"
+        ixz="-1.9806E-09"
+        iyy="2.3248E-05"
+        iyz="7.4828E-09"
+        izz="1.7239E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/axe_gauche.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/axe_gauche.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axe_gauche_joint"
+    type="fixed">
+    <origin
+      xyz="-0.26329 0.39873 -0.3785"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_boat" />
+    <child
+      link="axe_gauche" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fan_gauche">
+    <inertial>
+      <origin
+        xyz="0.012188 -2.0306E-08 3.2212E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0079579" />
+      <inertia
+        ixx="3.7271E-06"
+        ixy="7.2525E-13"
+        ixz="-1.4425E-13"
+        iyy="2.3932E-06"
+        iyz="-2.0319E-10"
+        izz="2.3946E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/fan_gauche.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/fan_gauche.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_gauche_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0069715"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="axe_gauche" />
+    <child
+      link="fan_gauche" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="axe_droite">
+    <inertial>
+      <origin
+        xyz="1.27735965964326E-06 -4.87801423292022E-06 0.0164902268129701"
+        rpy="0 0 0" />
+      <mass
+        value="0.0681006960211184" />
+      <inertia
+        ixx="2.32241590930712E-05"
+        ixy="-1.67850416577008E-09"
+        ixz="-1.98067451231707E-09"
+        iyy="2.32478036569559E-05"
+        iyz="7.48276057501103E-09"
+        izz="1.72388173834412E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/axe_droite.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/axe_droite.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axe_droite_joint"
+    type="fixed">
+    <origin
+      xyz="-0.26329 -0.40127 -0.3785"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_boat" />
+    <child
+      link="axe_droite" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fan_droite">
+    <inertial>
+      <origin
+        xyz="0.012188 -0.8 3.2212E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0079579" />
+      <inertia
+        ixx="3.7271E-06"
+        ixy="7.2525E-13"
+        ixz="-1.4425E-13"
+        iyy="2.3932E-06"
+        iyz="-2.0319E-10"
+        izz="2.3946E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/fan_droite.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boat version 5urdf/meshes/fan_droite.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_droite_joint"
+    type="continuous">
+    <origin
+      xyz="-0.8 0 -0.0069715"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="axe_droite" />
+    <child
+      link="fan_droite" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
