@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="dronesm">
+  <link
+    name="base_drone">
+    <inertial>
+      <origin
+        xyz="-1.87084654035968E-08 -3.11056949087174E-08 0.00181069275232664"
+        rpy="0 0 0" />
+      <mass
+        value="0.772422321428976" />
+      <inertia
+        ixx="0.000570791861737274"
+        ixy="1.96214205373143E-10"
+        ixz="1.01113804456808E-11"
+        iyy="0.000596837083493976"
+        iyz="1.68176349113393E-11"
+        izz="0.000860646965652608" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/base_drone.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/base_drone.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fan_AVD">
+    <inertial>
+      <origin
+        xyz="-1.17241966135495E-10 4.72893946223962E-10 -0.00226734727215817"
+        rpy="0 0 0" />
+      <mass
+        value="0.0792353968916005" />
+      <inertia
+        ixx="0.000565443698147487"
+        ixy="3.58249136766149E-05"
+        ixz="2.16111464202729E-14"
+        iyy="4.61426738699741E-06"
+        iyz="-8.94226441792596E-14"
+        izz="0.000569675887358225" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AVD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AVD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_AVDjoint"
+    type="continuous">
+    <origin
+      xyz="0.16299 -0.16299 0.0445"
+      rpy="0 0 0" />
+    <parent
+      link="base_drone" />
+    <child
+      link="fan_AVD" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="fan_AVG">
+    <inertial>
+      <origin
+        xyz="7.73890146410494E-10 3.76828811210483E-11 -0.00226734731708393"
+        rpy="0 0 0" />
+      <mass
+        value="0.0792353990603971" />
+      <inertia
+        ixx="0.000538735087364471"
+        ixy="0.000124696172003502"
+        ixz="6.98765381782958E-14"
+        iyy="3.1323033712424E-05"
+        iyz="2.42697974317243E-13"
+        izz="0.000569676047929746" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AVG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AVG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_AVGjoint"
+    type="continuous">
+    <origin
+      xyz="0.16299 0.16299 0.0445"
+      rpy="0 0 0" />
+    <parent
+      link="base_drone" />
+    <child
+      link="fan_AVG" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="fan_AD">
+    <inertial>
+      <origin
+        xyz="-4.84437157055595E-10 5.19363441142673E-11 -0.00226734441902539"
+        rpy="0 0 0" />
+      <mass
+        value="0.0792351821581551" />
+      <inertia
+        ixx="4.74236226564284E-05"
+        ixy="0.000153165074142608"
+        ixz="9.14136564848287E-14"
+        iyy="0.000522634513948098"
+        iyz="-1.0346031503665E-14"
+        izz="0.000569676063471998" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_ADjoint"
+    type="continuous">
+    <origin
+      xyz="-0.16299 -0.16299 0.0445"
+      rpy="0 0 0" />
+    <parent
+      link="base_drone" />
+    <child
+      link="fan_AD" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="fan_AG">
+    <inertial>
+      <origin
+        xyz="7.72497538159556E-10 5.97825573767086E-11 -0.00226734731708395"
+        rpy="0 0 0" />
+      <mass
+        value="0.0792353990603964" />
+      <inertia
+        ixx="0.000531196145004461"
+        ixy="0.000138987948706614"
+        ixz="6.29119309366546E-14"
+        iyy="3.88619760724263E-05"
+        iyz="2.44595672160963E-13"
+        izz="0.000569676047929738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.666666666666667 0.682352941176471 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dronesm/meshes/fan_AG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fan_AGjoint"
+    type="continuous">
+    <origin
+      xyz="-0.16299 0.16299 0.0445"
+      rpy="0 0 0" />
+    <parent
+      link="base_drone" />
+    <child
+      link="fan_AG" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
