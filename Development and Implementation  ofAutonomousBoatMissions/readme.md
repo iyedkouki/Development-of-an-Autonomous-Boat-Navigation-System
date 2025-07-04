@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/0ce049ec-dcd6-484d-9ad8-cc37d7dbc26a
 # ROS Development for Autonomous Boat Navigation System
 
 ## Overview
@@ -53,6 +51,8 @@ Autonomous Waste Cleaning: The navigation program uses the generated maps to pla
 ## Video of obstacle avoidance
 This video explain the avoidance obstacle strategie
 
+
+https://github.com/user-attachments/assets/0ce049ec-dcd6-484d-9ad8-cc37d7dbc26a
 
 
 
