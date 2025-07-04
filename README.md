@@ -39,7 +39,7 @@ Hardware Integration: Combines Raspberry Pi 4, sensors, and motor control system
 |----------------------------------|--------------------------------------------------|--------|
 | Mechanical_Design                | Hull design and fabrication details             | [README](Mechanical_Design/README.md) |
 | ROS_Development                   | ROS packages for navigation and waste collection | [README]() |
-| Hardware_Integration_and_Testing | Sensor and motor integration with Raspberry Pi  | [README](Hardware_Integration_and_Testing/README.md) |
+| Hardware_Integration_and_Testing | Sensor and motor integration with Raspberry Pi  | [README](Hardware Integration and Testing/README.md) |
 
 
 
