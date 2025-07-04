@@ -37,9 +37,9 @@ Hardware Integration: Combines Raspberry Pi 4, sensors, and motor control system
 
 | Directory                        | Description                                      | Link   |
 |----------------------------------|--------------------------------------------------|--------|
-| Mechanical_Design                | Hull design and fabrication details             | [README](Mechanical_Design/README.md) |
-| ROS_Development                   | ROS packages for navigation and waste collection | [README]() |
-| Hardware_Integration_and_Testing | Sensor and motor integration with Raspberry Pi  | [README](Hardware Integration and Testing/README.md) |
+| Mechanical_Design                | Hull design and fabrication details             | [README](Mechanical_Design/Readme.md) |
+| ROS_Development                   | ROS packages for navigation and waste collection | [README](Development-and-Implementation-ofAutonomousBoatMissions/readme.md) |
+| Hardware_Integration_and_Testing | Sensor and motor integration with Raspberry Pi  | [README](Hardware-Integration-and-Testing/READme.md) |
 
 
 
@@ -50,6 +50,10 @@ A 3D render of the boat’s ABS plastic hull, designed for hydrodynamic efficien
 ![boat_waste](https://github.com/user-attachments/assets/9516159a-e410-4fd3-bf5e-1988e6ce1b2d)
 
 ### Waste Collection Demonstration:
+
+
+https://github.com/user-attachments/assets/71788dbc-485d-4941-b9f7-db8c9ef3599f
+
 
 Watch Video
 A video showcasing the boat navigating and collecting waste autonomously.
