@@ -128,25 +128,3 @@ Publish a hydrodynamics parameters message:
 
 For more detail see the [Example](https://github.com/srmainwaring/asv_wave_sim/wiki/Example) page in the wiki.
 
-## License
-
-This is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This software is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-[GNU General Public License](LICENSE) for more details.
-
-This project makes use of other open source software, for full details see the
-file [LICENSE_THIRDPARTY](LICENSE_THIRDPARTY).
-
-## Acknowledgments
-
-- Jacques Kerner's two part blog describing boat physics for games: [Water interaction model for boats in video games](https://www.gamasutra.com/view/news/237528/Water_interaction_model_for_boats_in_video_games.php) and [Water interaction model for boats in video games: Part 2](https://www.gamasutra.com/view/news/263237/Water_interaction_model_for_boats_in_video_games_Part_2.php).
-- The [CGAL](https://doc.cgal.org) libraries are used for the wave field and model meshes.
-- The [UUV Simulator](https://github.com/uuvsimulator/uuv_simulator) package for the orginal vertex shaders used in the wave field visuals.
-- The [VMRC](https://bitbucket.org/osrf/vmrc) package for textures and meshes used
-in the wave field visuals.
