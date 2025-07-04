@@ -1,10 +1,10 @@
-Mechanical Design for Autonomous Boat Navigation System
+# Mechanical Design for Autonomous Boat Navigation System
 
-Overview
+## Overview
 
 This directory contains the mechanical design components for the Autonomous Boat Navigation System, developed as part of an end-of-studies project. The mechanical design encompasses the physical structure, hull design, and hardware integration for the autonomous boat, ensuring stability, durability, and functionality in various aquatic environments.
 
-Purpose
+## Purpose
 
 The mechanical design aims to:
 
@@ -26,7 +26,7 @@ Ensure efficient propulsion and maneuverability.
 
 Maintain stability and buoyancy under different water conditions.
 
-Components
+## Components
 
 The mechanical design includes the following key elements:
 
@@ -50,7 +50,7 @@ Frame and Supports: Internal framework to distribute weight and maintain structu
 
 Materials: ABS plastic.
 
-Design Details
+## Design Details
 
 
 
