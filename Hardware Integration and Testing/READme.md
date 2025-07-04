@@ -18,7 +18,8 @@ Camera Module: Supports vision-based perception via CSI port.
 Motor Control System: Uses Arduino Uno and ESCs for differential steering of APISQUEEN U2 MINI thrusters.
 Power System: Combines a TECTIN 20000mAh power bank and Zeee 4S 14.8V 5200mAh LiPo batteries.
 ## Diagram of system Components design
-![diagremfinal1](https://github.com/user-attachments/assets/4663596f-719b-403c-8076-771ad99f3da0)
+![archdiagram1](https://github.com/user-attachments/assets/a1307e59-1a27-4d00-a7be-0aa3457c2296)
+
 
 ## Wiring Raspberry PI 4 and IMU
 ![mpu_](https://github.com/user-attachments/assets/9b61175d-a30a-43ea-8f60-ff42647a2735)
