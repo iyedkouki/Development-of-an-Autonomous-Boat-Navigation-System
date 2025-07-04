@@ -7,6 +7,7 @@ Integrate hardware components with ROS Noetic for autonomous navigation and wast
 Validate system performance through unit, integration, and system-level testing in simulated and real-world conditions.
 Ensure reliable power distribution and protection against water exposure.
 
+
 ## Components
 
 Raspberry Pi 4: Central processing unit running Ubuntu 20.04 and ROS Noetic.
@@ -16,6 +17,9 @@ SIM808 GPS: Enables geolocation via UART through an Arduino Uno intermediary.
 Camera Module: Supports vision-based perception via CSI port.
 Motor Control System: Uses Arduino Uno and ESCs for differential steering of APISQUEEN U2 MINI thrusters.
 Power System: Combines a TECTIN 20000mAh power bank and Zeee 4S 14.8V 5200mAh LiPo batteries.
+## Diagram of system Components design
+![diagremfinal1](https://github.com/user-attachments/assets/4663596f-719b-403c-8076-771ad99f3da0)
+
 ## Wiring Raspberry PI 4 and IMU
 ![mpu_](https://github.com/user-attachments/assets/9b61175d-a30a-43ea-8f60-ff42647a2735)
 ## Wiring Raspberry PI 4 + Arduino + GPS Module SIM808
