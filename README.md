@@ -60,7 +60,7 @@ A video showcasing the boat navigating and collecting waste autonomously.
 ### Hardware Wiring Diagram:
 
 A schematic of the sensor, motor, and power system connections.
-![diagremfinal1](https://github.com/user-attachments/assets/b594ab6c-7d6d-4b2a-a45b-90a04f78a790)
+![archdiagram1](https://github.com/user-attachments/assets/14c9b0f1-303b-43f0-addd-739f990e7b52)
 
 ## Contact
 
